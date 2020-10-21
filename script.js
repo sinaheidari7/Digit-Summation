@@ -7,7 +7,7 @@ function problem_11() {
   var a = parseInt(prompt("Please enter a number: ", ""));
   
   
-    outputObj.innerHTML = "number: " + a + "<br><br>sum of digits: ";
+  outputObj.innerHTML = "number: " + a + "<br><br>";
 
   var sum = 0;
 
@@ -16,7 +16,7 @@ function problem_11() {
     sum = sum + num;
     a = Math.floor(a / 10);
 }
-    outputObj.innerHTML = "sum of digits: " + sum;
+  outputObj.innerHTML += "sum of digits: " + sum;
 
   outputObj.innerHTML = outputObj.innerHTML  + "<br><br>" + "program ended";
   document.getElementsByTagName("button")[0].setAttribute("disabled","true");
